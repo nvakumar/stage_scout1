@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage Scout - Profile</title>
+    <link rel="stylesheet" href="css/profile.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            <img src="images/logo.png" alt="Stage Scout Logo">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Roles</a></li>
+            <li><a href="#">Communities</a></li>
+            <li><a href="#">Profile</a></li>
+        </ul>
+    </nav>
+
+    <!-- Profile Section -->
+    <section class="profile-container">
+        <div class="profile-content">
+            <div class="avatar">
+                <img src="images/profile-avatar.png" alt="Profile Avatar">
+            </div>
+            <div class="profile-info">
+                <h2 id="profile-name">P Badrish Varma</h2>
+                <p class="role" id="profile-role">Actor</p>
+                <p class="bio" id="profile-bio">Passionate about acting, eager to bring characters to life on screen!</p>
+
+                <div class="profile-stats">
+                    <div class="stat">
+                        <h3>10K</h3>
+                        <p>Followers</p>
+                    </div>
+                    <div class="stat">
+                        <h3>500</h3>
+                        <p>Following</p>
+                    </div>
+                </div>
+
+                <button class="edit-btn" id="edit-profile-btn">Edit Profile</button>
+            </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-links">
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <!-- Skills Progress Bar -->
+        <div class="skills-section">
+            <h3>Skill Set</h3>
+            <div class="skill">
+                <p>Acting</p>
+                <div class="progress-bar"><span id="skill-acting" class="skill-value" style="width: 90%;">90%</span></div>
+            </div>
+            <div class="skill">
+                <p>Stage Performance</p>
+                <div class="progress-bar"><span id="skill-performance" class="skill-value" style="width: 80%;">80%</span></div>
+            </div>
+            <div class="skill">
+                <p>Voice Modulation</p>
+                <div class="progress-bar"><span id="skill-voice" class="skill-value" style="width: 70%;">70%</span></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/profile.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Stage Scout</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <style>
+        /* Inline CSS */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #000000, #333333);
+            color: white;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation */
+        nav {
+            background: black;
+            padding: 15px;
+            display: flex;
+            justify-content: center; /* Center align content */
+            align-items: center;
+            position: relative;
+        }
+
+        /* Logo Styling */
+        .logo img {
+            width: 150px; /* Adjust size */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        
+        <div class="logo">
+            <img src="images/logo.png" alt="Stage Scout Logo">
+        </div>
+    </nav>
+
+    <!-- Sign In Box -->
+    <div class="signin-container" id="signin-box">
+        <h2>Welcome to Stage Scout!</h2>
+        <p>What do you want to become? Actor, Director, Story Writer... <br> Join us now! 🎬</p>
+
+        <form id="signInForm">
+            <div class="input-container">
+                <input type="email" id="email" class="input-box" required placeholder=" ">
+                <label for="email">Email</label>
+            </div>
+
+            <div class="input-container">
+                <input type="password" id="password" class="input-box" required placeholder=" ">
+                <label for="password">Password</label>
+            </div>
+
+            <button type="submit" class="signin-btn">Sign In</button>
+            <button type="button" id="staySignedOut" class="stay-out-btn">Stay Signed Out</button>
+        </form>
+    </div>
+
+    <section class="roles-section">
+        <h2>Explore Your Dream Role in the Film Industry 🎥</h2>
+        <div class="roles-container">
+    
+            <!-- Creative Roles -->
+            <div class="role" onclick="scrollToSignIn()">
+                <img src="images/badrish.png" alt="Director">
+                <h3>Director</h3>
+                <p>The visionary who oversees everything from storytelling to acting.</p>
+            </div>
+    
+            <div class="role" onclick="scrollToSignIn()">
+                <img src="images/mohit.png" alt="Screenwriter">
+                <h3>Screenwriter</h3>
+                <p>Brings stories to life by crafting dialogues and scripts.</p>
+            </div>
+    
+            <div class="role" onclick="scrollToSignIn()">
+                <img src="images/prudhvi.png" alt="Cinematographer">
+                <h3>Cinematographer</h3>
+                <p>Shapes the film’s visuals with perfect lighting and angles.</p>
+            </div>
+    
+            <div class="role" onclick="scrollToSignIn()">
+                <img src="images/badrish.png" alt="Editor">
+                <h3>Editor</h3>
+                <p>Puts the film together, shaping its final form and impact.</p>
+            </div>
+    
+            <div class="role" onclick="scrollToSignIn()">
+                <img src="images/praneeth.png" alt="Music Composer">
+                <h3>Music Composer</h3>
+                <p>Creates melodies that define the emotional tone of a film.</p>
+            </div>
+    
+            <!-- Technical Roles -->
+            <div class="role" onclick="scrollToSignIn()">
+                <img src="images/praneeth.png" alt="Sound Designer">
+                <h3>Sound Designer</h3>
+                <p>Crafts the immersive audio experience of a movie.</p>
+            </div>
+    
+            <div class="role" onclick="scrollToSignIn()">
+                <img src="images/prudhvi.png" alt="VFX Supervisor">
+                <h3>VFX Supervisor</h3>
+                <p>Brings unreal worlds to life with computer-generated effects.</p>
+            </div>
+    
+            <div class="role" onclick="scrollToSignIn()">
+                <img src="images/mohit.png" alt="Gaffer">
+                <h3>Gaffer</h3>
+                <p>Manages the lighting team to achieve the perfect cinematic look.</p>
+            </div>
+    
+            <!-- Production Roles -->
+            <div class="role" onclick="scrollToSignIn()">
+                <img src="images/praneeth.png" alt="Producer">
+                <h3>Producer</h3>
+                <p>Oversees the entire film production from budgeting to release.</p>
+            </div>
+    
+            <div class="role" onclick="scrollToSignIn()">
+                <img src="images/badrish.png" alt="Assistant Director">
+                <h3>Assistant Director</h3>
+                <p>Ensures smooth execution of the director’s vision on set.</p>
+            </div>
+    
+            <div class="role" onclick="scrollToSignIn()">
+                <img src="images/prudhvi.png" alt="Script Supervisor">
+                <h3>Script Supervisor</h3>
+                <p>Maintains continuity and ensures the script is followed accurately.</p>
+            </div>
+    
+            <!-- Other Roles -->
+            <div class="role" onclick="scrollToSignIn()">
+                <img src="images/mohit.png" alt="Casting Director">
+                <h3>Casting Director</h3>
+                <p>Finds the right actors who bring characters to life.</p>
+            </div>
+    
+            <div class="role" onclick="scrollToSignIn()">
+                <img src="images/praneeth.png" alt="Makeup Artist">
+                <h3>Makeup Artist</h3>
+                <p>Transforms actors into their characters with professional makeup.</p>
+            </div>
+    
+            <div class="role" onclick="scrollToSignIn()">
+                <img src="images/prudhvi.png" alt="Hair Stylist">
+                <h3>Hair Stylist</h3>
+                <p>Creates perfect hairstyles to match the characters.</p>
+            </div>
+    
+            <div class="role" onclick="scrollToSignIn()">
+                <img src="images/praneeth.png" alt="Stunt Coordinator">
+                <h3>Stunt Coordinator</h3>
+                <p>Designs and ensures the safe execution of stunts.</p>
+            </div>
+    
+            <div class="role" onclick="scrollToSignIn()">
+                <img src="images/mohit.png" alt="Choreographer">
+                <h3>Choreographer</h3>
+                <p>Creates stunning dance sequences for songs and action scenes.</p>
+            </div>
+    
+            <div class="role" onclick="scrollToSignIn()">
+                <img src="images/badrish.png" alt="Manga Artist">
+                <h3>Manga Artist</h3>
+                <p>Illustrates visually stunning manga and anime-inspired content.</p>
+            </div>
+    
+            <div class="role" onclick="scrollToSignIn()">
+                <img src="images/badrish.png" alt="Animator">
+                <h3>Animator</h3>
+                <p>Brings stories to life through breathtaking animation.</p>
+            </div>
+    
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 15px;
+    background-color: #000;
+}
+
+/* Reels Container */
+.reels-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    position: relative;
+}
+
+/* Individual Reel */
+.short-video {
+    width: 300px;
+    height: 533px; /* 9:16 aspect ratio */
+    position: relative;
+    margin: 10px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #222;
+    display: flex;
+    justify-content: flex-end;
+    scroll-snap-align: start;
+}
+
+/* Video */
+.short-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Video Overlay */
+.overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+}
+
+.overlay p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Floating Action Buttons */
+.actions {
+    position: absolute;
+    right: 10px;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.actions button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.actions button:hover {
+    transform: scale(1.2);
+}
+
+/* Profile */
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies - Stage Scout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎬 Movies</h1>
+        <nav>
+            <ul>
+                <li><a href="#" data-category="full-movies">Full Movies</a></li>
+                <li><a href="#" data-category="short-videos">Short Videos</a></li>
+                <li><a href="#" data-category="scripts">Scripts</a></li>
+                <li><a href="#" data-category="anime">Anime</a></li>
+                <li><a href="#" data-category="manga">Manga</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content-feed">
+        <div class="section">
+            <h2>Recommended Movies</h2>
+            <div class="carousel">
+                <button class="scroll-btn left">&#10094;</button>
+                <div class="movies" id="movie-container">
+                    <!-- Movies will be dynamically loaded here -->
+                </div>
+                <button class="scroll-btn right">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

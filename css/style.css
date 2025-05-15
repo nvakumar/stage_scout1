@@ -1,0 +1,205 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+search-bar {
+    padding: 1rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar input {
+    width: 50%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.content-feed {
+    padding: 2rem;
+}
+
+/* Section Styles */
+.section {
+    margin-bottom: 2rem;
+}
+
+.section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Flexbox Layout */
+.movies, .short-videos, .scripts, .manga, .anime {
+    display: flex;
+    gap: 1rem;
+    overflow-x: scroll;
+    padding-bottom: 1rem;
+}
+
+.movie, .short-video, .anime-item {
+    flex-shrink: 0;
+    width: 300px;  /* Keeping the original size */
+    position: relative;
+    border-radius: 5px;
+    background-color: #ddd;
+    overflow: hidden;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Short Videos Section - Updated for YouTube Shorts/Instagram Reels */
+.short-video {
+    width: 300px;
+    height: 533px; /* Keeping the 9:16 aspect ratio */
+    position: relative;
+    border-radius: 8px;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Manga Section (Updated to 1200x630) */
+.manga-item {
+    flex-shrink: 0;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #ddd;
+    overflow: hidden;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Scripts Section (Updated to 1200x630) */
+.script {
+    flex-shrink: 0;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    border-radius: 5px;
+    background-color: #ddd;
+    overflow: hidden;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Image Styles */
+.movie img, .short-video img, .script img, .manga-item img, .anime-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Content Title */
+.content-title {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Profile Styles */
+.profile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.profile p {
+    color: black;
+    font-size: 0.9rem;
+    margin: 0;
+    text-align: center;
+}
+
+/* Scrollbar Customization */
+.movies::-webkit-scrollbar, 
+.short-videos::-webkit-scrollbar, 
+.scripts::-webkit-scrollbar, 
+.manga::-webkit-scrollbar, 
+.anime::-webkit-scrollbar {
+    height: 5px;
+}
+
+.movies::-webkit-scrollbar-thumb, 
+.short-videos::-webkit-scrollbar-thumb, 
+.scripts::-webkit-scrollbar-thumb, 
+.manga::-webkit-scrollbar-thumb, 
+.anime::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+.movies::-webkit-scrollbar-thumb:hover, 
+.short-videos::-webkit-scrollbar-thumb:hover, 
+.scripts::-webkit-scrollbar-thumb:hover, 
+.manga::-webkit-scrollbar-thumb:hover, 
+.anime::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
